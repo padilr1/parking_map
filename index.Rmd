@@ -1,0 +1,25 @@
+---
+title: "Parking map for Alexie & Reinnier's Wedding"
+author: ""
+date: ""
+output:
+  html_document:
+    toc: true
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+library(png)
+library(grid)
+```
+
+The parking can be found behind the building at: 10 rue St-Jean-Baptiste E, Rigaud, QC, J0P 1P0, Canada
+
+```{r,echo=FALSE}
+img <- readPNG("~/Documents/parking_map/parking.png")
+grid.raster(img)
+```
+
